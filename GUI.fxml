@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Moloneyda.Controller">
+    <children>
+        <Button fx:id="startButton" disable="false" layoutX="94.0" layoutY="42.0"
+                mnemonicParsing="false" onAction="#start" text="Start"/>
+        <Button fx:id="stopButton" disable="true" layoutX="235.0" layoutY="42.0"
+                mnemonicParsing="false" onAction="#stop" text="Stop"/>
+        <Button fx:id="updateButton" disable="true" onAction="#update" layoutX="394.0"
+                layoutY="42.0"
+                mnemonicParsing="false" text="Update"/>
+        <Button fx:id="addButton" disable="true" onAction="#addIp" layoutX="87.0" layoutY="263.0"
+                mnemonicParsing="false" text="Add"/>
+        <Button fx:id="deleteButton" disable="true" onAction="#deleteIp" layoutX="172.0"
+                layoutY="263.0"
+                mnemonicParsing="false" text="Delete"/>
+        <Button fx:id="exitButton" disable="false" layoutX="280.0" layoutY="257.0"
+                mnemonicParsing="false" onAction="#exit" prefHeight="43.0" prefWidth="99.0"
+                text="Exit"/>
+        <Label layoutX="20.0" layoutY="140.0" text="Domain Name:"/>
+        <Label layoutX="99.0" layoutY="215.0" text="IP Address:"/>
+        <TextField fx:id="domainNameField" disable="true" layoutX="135.0" layoutY="135.0"
+                   onKeyPressed="#getTextDomainName" prefHeight="31.0" prefWidth="436.0"/>
+        <TextField fx:id="ipAddressField" disable="true" layoutX="189.0" layoutY="210.0"
+                   prefHeight="31.0"
+                   prefWidth="235.0"/>
+    </children>
+</Pane>
